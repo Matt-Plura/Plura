@@ -62,9 +62,9 @@
       "group": "The Platform",
       "pages": [
         "the-platform/overview",
-        "the-platform/ai-agents",
-        "the-platform/conversation-flows",
         "the-platform/inbox",
+        "the-platform/campaigns",
+        "the-platform/journeys",
         "the-platform/phone-numbers",
         "the-platform/history",
         "the-platform/analytics",
