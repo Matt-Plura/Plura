@@ -58,6 +58,19 @@
       ]
     },
     {
+      "group": "The Platform",
+      "pages": [
+        "the-platform/overview",
+        "the-platform/ai-agents",
+        "the-platform/conversation-flows",
+        "the-platform/inbox",
+        "the-platform/phone-numbers",
+        "the-platform/history",
+        "the-platform/analytics",
+        "the-platform/settings"
+      ]
+    },
+    {
       "group": "Ai Agents",
       "pages": [
         "ai-agents/overview",
