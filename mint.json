@@ -72,7 +72,7 @@
       ]
     },
     {
-      "group": "Ai Agents",
+      "group": "Ai Campaigns",
       "pages": [
         "ai-agents/overview",
         "ai-agents/configuration",
