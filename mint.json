@@ -23,7 +23,7 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.plura.ai"
   },
   "tabs": [
     {
@@ -55,6 +55,18 @@
         "introduction",
         "quickstart",
         "development"
+      ]
+    },
+    {
+      "group": "Ai Agents",
+      "pages": [
+        "Ai Agents/Introduction",
+        "Ai Agents/Configuration",
+        "Ai Agents/Knowledge Base",
+        "Ai Agents/Voice",
+        "Ai Agents/Functions",
+        "Ai Agents/Advanced",
+        "Ai Agents/Analysis",
       ]
     },
     {
