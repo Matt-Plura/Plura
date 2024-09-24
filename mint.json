@@ -50,11 +50,12 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "General",
       "pages": [
         "introduction",
         "quickstart",
-        "development"
+        "compliance",
+        "support"
       ]
     },
     {
