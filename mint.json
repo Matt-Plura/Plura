@@ -60,13 +60,14 @@
     {
       "group": "Ai Agents",
       "pages": [
-        "ai-agents/introduction",
+        "ai-agents/overview",
         "ai-agents/configuration",
         "ai-agents/knowledge-base",
         "ai-agents/voice",
         "ai-agents/functions",
         "ai-agents/advanced",
-        "ai-agents/analysis"
+        "ai-agents/analysis",
+        "ai-agent/deploying-your-agent"
       ]
     },
     {
