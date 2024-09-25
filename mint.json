@@ -85,6 +85,19 @@
       ]
     },
     {
+      "group": "Journeys",
+      "pages": [
+        "journeys/",
+        "journeys/configuration",
+        "journeys/knowledge-base",
+        "journeys/voice",
+        "journeys/functions",
+        "journeys/advanced",
+        "journeys/analysis",
+        "journeys/publishing"
+      ]
+    },
+    {
       "group": "Essentials",
       "pages": [
         "essentials/markdown",
