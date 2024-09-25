@@ -62,9 +62,9 @@
       "group": "The Platform",
       "pages": [
         "the-platform/overview",
-        "the-platform/inbox",
         "the-platform/ai-campaigns",
         "the-platform/journeys",
+        "the-platform/inbox",
         "the-platform/phone-numbers",
         "the-platform/history",
         "the-platform/analytics",
@@ -74,14 +74,14 @@
     {
       "group": "Ai Campaigns",
       "pages": [
-        "ai-agents/overview",
-        "ai-agents/configuration",
-        "ai-agents/knowledge-base",
-        "ai-agents/voice",
-        "ai-agents/functions",
-        "ai-agents/advanced",
-        "ai-agents/analysis",
-        "ai-agent/publishing"
+        "ai-campaigns/overview",
+        "ai-campaigns/configuration",
+        "ai-campaigns/knowledge-base",
+        "ai-campaigns/voice",
+        "ai-campaigns/functions",
+        "ai-campaigns/advanced",
+        "ai-campaigns/analysis",
+        "ai-campaigns/publishing"
       ]
     },
     {
