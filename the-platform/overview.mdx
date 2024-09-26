@@ -24,17 +24,16 @@ Plura’s core concept revolves around agents—specialized, reusable building b
 
 <AccordionGroup>
   <Accordion title="Webchat Agent">
-    **Purpose:** 
-    Engage users in real-time through a chat interface on your website. **Functionality:** Greets users, answers questions, and drive users towards specific actions (e.g., scheduling a call). Use personalized messages based on user data (e.g., name, browsing history). **When Active:** Typically used for initial engagement when users first land on a website.
+    **Purpose:**<br/>
+    Engage users in real-time through a chat interface on your website.<br/><br/>**Functionality:**<br/>Greets users, answers questions, and drive users towards specific actions (e.g., scheduling a call). Use personalized messages based on user data (e.g., name, browsing history).<br/><br/>**When Active:**<br/> Typically used for initial engagement when users first land on a website.<br/><br/>
   </Accordion>
   <Accordion title="SMS Agent">
-    **Purpose:** 
-    Re-engages users via text messaging, perfect for follow-ups when users leave the webchat or don’t respond. **Functionality:** Sends automated, personalized SMS messages to re-establish contact or keep users engaged. Can handle replies, such as users responding to schedule a call or asking for more information. **When Active:** Usually post-webchat when a user doesn’t complete the desired action or as part of a nurturing sequence.
+    **Purpose:**<br/>Re-engages users via text messaging, perfect for follow-ups when users leave the webchat or don’t respond<br/><br/>**Functionality:**<br/>Sends automated, personalized SMS messages to re-establish contact or keep users engaged. Can handle replies, such as users responding to schedule a call or asking for more information.<br/><br/>**When Active:** Usually post-webchat when a user doesn’t complete the desired action or as part of a nurturing sequence.<br/><br/>
 
   </Accordion>
   <Accordion title="Voice Agent">
-    **Purpose:** 
-    Automates AI-driven voice calls to convert leads or handle customer service. **Functionality:** Handles both inbound and outbound calls. Follows pre-defined scripts or responds dynamically based on the conversation. Aims to meet campaign goals (e.g., sales, appointment booking). **When Active:** Typically used after a webchat or SMS engagement to solidify interest and close a sale.
+    **Purpose:**<br/>
+    Automates AI-driven voice calls to convert leads or handle customer service.<br/><br/>**Functionality:**<br/>Handles both inbound and outbound calls. Follows pre-defined scripts or responds dynamically based on the conversation. Aims to meet campaign goals (e.g., sales, appointment booking).<br/><br/>**When Active:**<br/>Typically used after a webchat or SMS engagement to solidify interest and close a sale.<br/><br/>
   </Accordion>
 </AccordionGroup>
 
@@ -45,20 +44,24 @@ Plura's campaign flows are designed to adapt dynamically based on user actions, 
 #### How Transitions Work:
 Transitions are based on events. Plura uses these events (e.g., user closes webchat, no SMS response) to trigger a transition between agents.
 
-For example, If a user closes the Webchat without scheduling a demo, the system automatically triggers an SMS Agent to follow up. 
+<Tip>
+
+**Example:** If a user closes the Webchat without scheduling a demo, the system automatically triggers an SMS Agent to follow up.
+
+</Tip> 
 
 #### Transition Example Workflow:
 
 <AccordionGroup>
   <Accordion title="Agent 1: Webchat">
-    Conditions (e.g., user hasn't responded in 48 hours, user expresses interest) dictate when and where transitions occur in the campaign. Go to (Agent 2).
+    **Condition:** (e.g., user hasn't responded in 48 hours, user expresses interest) dictate when and where transitions occur in the campaign. Go to (Agent 2).
   </Accordion>
   <Accordion title="Agent 2: SMS">
-    Send follow-up SMS to keep the user engaged.
+    **Send follow-up SMS** to keep the user engaged.
  `condition` If the user doesn't respond after 2 days, initiate an AI Voice Call (Agent 3).
   </Accordion>
   <Accordion title="Agent 3: Voice Call">
-    Attempt to re-engage the user through a scheduled or proactive AI call. `post-call action` Based on the outcome, either end the campaign if the goal is met, or return to SMS/Webchat.
+    **Attempt to re-engage** through a scheduled or proactive AI call. <br/>Initiate `post-call action` based on the outcome to either end the campaign if the goal is met, return to SMS, Webchat or both.
   </Accordion>
 </AccordionGroup>
 
@@ -67,14 +70,14 @@ Plura's global agents handle common tasks that can be triggered at any point in 
 
 <AccordionGroup>
   <Accordion title="Scheduling Global Agent">
-    **Purpose:** Handles scheduling requests across all agents and channels.
+    **Purpose:**<br/>Handles scheduling requests across all agents and channels.<br/><br/>
 **Functionality:** Presents available times for calls or appointments, confirms bookings, and updates the campaign's state.
-**When Triggered:** If a user requests a call in Webchat, SMS, or Voice, this global agent takes over to finalize the appointment.
+<br/><br/>**When Triggered:**<br/>If a user requests a call in Webchat, SMS, or Voice, this global agent takes over to finalize the appointment.<br/><br/>
   </Accordion>
   <Accordion title="DNC (Do Not Contact) Global Agent">
-    **Purpose:** Manages opt-out requests (Do Not Call).
-**Functionality:** If a user requests not to be contacted, the DNC agent immediately updates the CRM and halts any further communications.
-**When Triggered:** Can be triggered from any channel (Webchat, SMS, Voice Call) whenever a user expresses their desire to stop communications.
+    **Purpose:**<br/>Manages opt-out requests (Do Not Call).
+<br/><br/>**Functionality:**<br/> If a user requests not to be contacted, the DNC agent immediately updates the CRM and halts any further communications.<br/><br/>
+**When Triggered:**<br/>Can be triggered from any channel (Webchat, SMS, Voice Call) whenever a user expresses their desire to stop communications.<br/><br/>
   </Accordion>
 </AccordionGroup>
 
@@ -83,18 +86,25 @@ Plura's global agents handle common tasks that can be triggered at any point in 
  To ensure seamless transitions between agents, Plura uses centralized state management. This system tracks all user interactions and maintains their context, so agents can reference past engagements and pick up where the previous interaction left off.
 
 #### How It Works:
-1. **Centralized User Profile:** Stores interaction history, current state (e.g., last active channel), and campaign progress (e.g., call scheduled, goal achieved).
-2. **Real-Time Updates:** When a user interacts with Webchat, SMS, or Voice, the system updates the centralized profile so all agents remain in sync.
+- **Centralized User Profile:** Stores interaction history, current state (e.g., last active channel), and campaign progress (e.g., call scheduled, goal achieved).
+- **Real-Time Updates:** When a user interacts with Webchat, SMS, or Voice, the system updates the centralized profile so all agents remain in sync.
 
->**Example:** If a user was engaged via Webchat but didn't complete an action and switched to SMS later, the system knows where the user left off and picks up the conversation accordingly.
->
+<Tip>
+
+**Example:** If a user was engaged via Webchat but didn't complete an action and switched to SMS later, the system knows where the user left off and picks up the conversation accordingly.
+
+</Tip>
 ### 5. Goal-Driven Campaigns
-Plura campaigns are designed around specific goals, such as:
+AI campaigns are designed around specific goals, such as:
 - Making a Sale
 - Scheduling a Demo
 - Collecting User Information
 
-Each campaign has a clearly defined goal, and Plura tracks the - user's progress towards achieving that goal.
+<Tip>
+
+Each campaign has a clearly defined goal. Progress towards achieving that goal is monitored at every step.
+
+</Tip>
 
 #### Goal Monitoring:
 > **Automated Progression:** The system moves the user through different agents and channels, continuously checking if the goal has been achieved (e.g., call scheduled, purchase made).
@@ -124,13 +134,17 @@ Each campaign has a clearly defined goal, and Plura tracks the - user's progress
 ## 6. Data-Driven Personalization
 Plura leverages user data to deliver highly personalized interactions across all channels. Using data stored in the centralized user profile, the system can tailor each message to the user, increasing engagement and relevance.
 
-Personalization Tactics:
-Dynamic Variables: Insert personalized information like `First Name`, `Product`, and `Last Purchase` into messages.
+**Personalization Tactics:**<br/>
+Insert dynamic variables of personalized information like `First Name`, `Product/Service`, and `Last Purchase` into messages.
 
-Data-Driven Decision-Making: Use user history and behavior (e.g., past interactions, engagement level) to determine the next steps in the campaign flow.
-Example of Personalization:
-Webchat Greeting: "Hi `Name`, welcome back! I see you've been exploring `Product`. Would you like to schedule a demo?"
-SMS Follow-Up: "Hey `Name`, it's been a few days since we talked about `Product`. Are you still interested in scheduling a call?"
+**Data-Driven Decision-Making:**<br/>
+Leverage user history and behavior (e.g., past interactions, engagement level) to determine the next steps in the campaign flow.
+<Tip>
+
+**Personalization Example:**<br/><br/>***Webchat Greeting:*** "Hi `Name`, welcome back! I see you've been exploring our `Product/Service`. Would you like to schedule a demo?"<br/><br/>
+***SMS Follow-Up:*** "Hey `Name`, it's been a few days since we heard from you about our `Product/Service`. Is there a favorable time for you to scheduling a demo?"
+
+</Tip>
 
 #### Step-by-Step Campaign Example:<br/>
 **Objective:** Schedule a demo
