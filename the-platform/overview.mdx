@@ -115,7 +115,7 @@ Voice Call Agent: Initiate a call to engage the user directly.
 Action: Attempt to schedule or confirm the demo.
 Post-Call: Depending on the call's outcome, either mark the goal as achieved or continue nurturing the lead via SMS/Webchat.
 
-6. Data-Driven Personalization
+## 6. Data-Driven Personalization
 Plura leverages user data to deliver highly personalized interactions across all channels. Using data stored in the centralized user profile, the system can tailor each message to the user, increasing engagement and relevance.
 
 Personalization Tactics:
@@ -126,13 +126,13 @@ Example of Personalization:
 Webchat Greeting: "Hi `Name`, welcome back! I see you've been exploring `Product`. Would you like to schedule a demo?"
 SMS Follow-Up: "Hey `Name`, it's been a few days since we talked about `Product`. Are you still interested in scheduling a call?"
 
-Full Example Campaign: Step-by-Step
-Objective: Convert a lead into a customer by scheduling a demo call.
+#### Step-by-Step Example Campaign:<br/>
+**Objective:** Schedule a demo
 
 <Steps>
   <Step title="Step 1: User Fills Out a Web Form ">
     **Trigger:** The user submits a form on your website.
-    <br />**Action:** Redirect them to Webchat for real-time engagement.
+    <br />**Action:** Redirect them to (Agent 1) Webchat for real-time engagement.
   </Step>
   <Step title="Step 2: Engage in Webchat (Agent 1)">
     **Goal:** Try to schedule a demo call.<br/>
@@ -141,7 +141,7 @@ Objective: Convert a lead into a customer by scheduling a demo call.
   </Step>
   <Step title="Step 3: SMS Outreach (Agent 2)">
     **Goal:** Send personalized SMS follow-ups to re-engage the user.
-<br/>**Example Message:** "Hi `Name`, we noticed you checked out `Product` recently. Want to schedule a quick demo?"
+<br/>**Example Message:** "Hi `Name`, we noticed you checked out our `Product/Service` recently. Want to schedule a quick demo?"
 <br/>**If Successful:** Schedule the call using the Scheduling Global Agent.<br/>
 **If No Response After `X` Days:** Trigger the Voice Call Agent to initiate an outbound call.
   </Step>
