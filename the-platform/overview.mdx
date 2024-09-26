@@ -5,18 +5,18 @@ description: 'AI Campaigns by Plura Explained'
 
 ## AI Campaigns Overview
 
-Plura is an omni-channel AI workflow builder that enables businesses to design sophisticated, connected campaigns across Webchat, SMS, and Voice Call channels. Each campaign consists of modular agents that handle specific tasks, including customer engagement, goal setting, and scheduling, all while maintaining a unified flow of communication.
+Plura is an omni-channel AI journey builder that enables businesses to design sophisticated, connected campaigns across Webchat, SMS, and Voice Call channels. Each campaign consists of modular agents that handle specific tasks, including customer engagement, goal setting, and scheduling, all while maintaining a unified flow of communication.
  
 The system is designed to intelligently transition between channels based on user behavior, utilizing **modular agents** for each channel, **global agents** for tasks like scheduling and opt-out requests, and **conditional logic** to ensure a smooth and personalized experience throughout the customer journey.
  
 ## Key Components of AI Campaigns
 
 1. Modular Agents (Webchat, SMS, Voice Call)
-2. Agent Transitions with Conditional Logic
+2. Conditions
 3. Global Agents (Scheduling, DNC)
 4. State Management & Contextual Continuity
-5. Goal-Driven Campaigns
-6. Data-Driven Personalization
+5. Goals
+6. Personalization
 
 ## 1. Modular Agents
 
@@ -37,20 +37,19 @@ Plura’s core concept revolves around agents—specialized, reusable building b
   </Accordion>
 </AccordionGroup>
 
-## 2. Agent Transitions with Conditional Logic
+## 2. Conditions
 
-Plura's campaign flows are designed to adapt dynamically based on user actions, using agent transitions and conditional logic to determine when to switch from one agent to another.
+Customer Journeys are designed to adapt dynamically based on events, using conditional logic to determine when to switch from one agent to another.
 
-### How Transitions Work:
-Transitions are based on events. Plura uses these events (e.g., user closes webchat, no SMS response) to trigger a transition between agents.
+Because conditions are based on events. Plura uses these events (e.g., user closes webchat, no SMS response) to trigger a transition between agents.
 
 <Tip>
 
-**Example:** If a user closes the Webchat without scheduling a demo, the system automatically triggers an SMS Agent to follow up.
+**Example:** If a user closes the Webchat window, or abruptly hangs up a call without scheduling a demo, the system automatically triggers an SMS Agent to follow up.
 
 </Tip> 
 
-### Transition Example Workflow:
+### Example of a condition in a customer journey:
 
 <AccordionGroup>
   <Accordion title="Agent 1: Webchat">
@@ -82,8 +81,10 @@ Plura's global agents handle common tasks that can be triggered at any point in 
 </AccordionGroup>
 
 
-### 4. State Management & Contextual Continuity
- To ensure seamless transitions between agents, Plura uses centralized state management. This system tracks all user interactions and maintains their context, so agents can reference past engagements and pick up where the previous interaction left off.
+## 4. State Management & Contextual Continuity
+ Plura is a **Stateful AI platform**, which means it retains information across interactions. It remembers past conversations, context, and user preferences, allowing for dynamic personalized engagement. Multi-step interactions and adaptability to complex use-cases open the door endless possibilites.
+ 
+ To ensure seamless transitions between agents, Plura's centralized state management system tracks all user interactions and maintains their context, so agents can reference past engagements and pick up where the previous interaction left off.
 
 #### How It Works:
 - **Centralized User Profile:** Stores interaction history, current state (e.g., last active channel), and campaign progress (e.g., call scheduled, goal achieved).
