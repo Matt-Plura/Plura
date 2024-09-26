@@ -61,7 +61,6 @@
     {
       "group": "The Platform",
       "pages": [
-        "the-platform/overview",
         "the-platform/ai-campaigns",
         "the-platform/journeys",
         "the-platform/inbox",
@@ -98,7 +97,7 @@
       ]
     },
     {
-      "group": "essentials",
+      "group": "Essentials",
       "pages": [
         "essentials/code"
       ]
