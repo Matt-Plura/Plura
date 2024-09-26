@@ -35,7 +35,7 @@
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "url": "https://plura.com/docs"
     },
     {
       "name": "Community",
@@ -87,7 +87,7 @@
     {
       "group": "Journeys",
       "pages": [
-        "journeys/",
+        "journeys/overview",
         "journeys/configuration",
         "journeys/knowledge-base",
         "journeys/voice",
@@ -95,17 +95,6 @@
         "journeys/advanced",
         "journeys/analysis",
         "journeys/publishing"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
       ]
     },
     {
@@ -124,8 +113,8 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "x": "https://x.com/plura",
+    "github": "https://github.com/plura",
+    "linkedin": "https://www.linkedin.com/company/plura"
   }
 }
