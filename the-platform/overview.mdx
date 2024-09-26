@@ -119,37 +119,42 @@ Post-Call: Depending on the call's outcome, either mark the goal as achieved or 
 Plura leverages user data to deliver highly personalized interactions across all channels. Using data stored in the centralized user profile, the system can tailor each message to the user, increasing engagement and relevance.
 
 Personalization Tactics:
-Dynamic Variables: Insert personalized information like [First Name], [Product], and [Last Purchase] into messages.
+Dynamic Variables: Insert personalized information like `First Name`, `Product`, and `Last Purchase` into messages.
 
 Data-Driven Decision-Making: Use user history and behavior (e.g., past interactions, engagement level) to determine the next steps in the campaign flow.
 Example of Personalization:
-Webchat Greeting: "Hi [Name], welcome back! I see you've been exploring [Product]. Would you like to schedule a demo?"
-SMS Follow-Up: "Hey [Name], it's been a few days since we talked about [Product]. Are you still interested in scheduling a call?"
+Webchat Greeting: "Hi `Name`, welcome back! I see you've been exploring `Product`. Would you like to schedule a demo?"
+SMS Follow-Up: "Hey `Name`, it's been a few days since we talked about `Product`. Are you still interested in scheduling a call?"
 
 Full Example Campaign: Step-by-Step
 Objective: Convert a lead into a customer by scheduling a demo call.
 
-Step 1: User Fills Out a Form (Webchat)
-Trigger: The user submits a form on your website.
-Action: Redirect them to Webchat for real-time engagement.
+<Steps>
+  <Step title="Step 1: User Fills Out a Web Form ">
+    **Trigger:** The user submits a form on your website.
+    <br />**Action:** Redirect them to Webchat for real-time engagement.
+  </Step>
+  <Step title="Step 2: Engage in Webchat (Agent 1)">
+    **Goal:** Try to schedule a demo call.<br/>
+    **If Successful:** Use the Global Agent to schedule & confirm the time.<br/>
+    **If Unsuccessful:** If the user closes the webchat without scheduling, transition to SMS Agent.  
+  </Step>
+  <Step title="Step 3: SMS Outreach (Agent 2)">
+    **Goal:** Send personalized SMS follow-ups to re-engage the user.
+<br/>**Example Message:** "Hi `Name`, we noticed you checked out `Product` recently. Want to schedule a quick demo?"
+<br/>**If Successful:** Schedule the call using the Scheduling Global Agent.<br/>
+**If No Response After `X` Days:** Trigger the Voice Call Agent to initiate an outbound call.
+  </Step>
+  <Step title="Step 4: AI Voice Call (Agent 3)">
+    **Goal:** Use an AI Voice Call to either confirm interest or schedule a demo.<br/>
+    **Post-Call:** Depending on the outcome, either:<br/>
+    **Goal Achieved:** End the campaign, update CRM.<br/>
+    **Goal Not Achieved:** Loop back to nurturing via SMS or Webchat.
+  </Step>
+</Steps>
 
-Step 2: Engage in Webchat (Agent 1)
-Goal: Try to schedule a demo call.
-If Successful: Use the Scheduling Global Agent to confirm the time.
-If Unsuccessful: If the user closes the webchat without scheduling, transition to SMS Agent.
 
-Step 3: SMS Outreach (Agent 2)
-Goal: Send personalized SMS follow-ups to re-engage the user.
-Example Message: "Hi [Name], we noticed you checked out [Product] recently. Want to schedule a quick demo?"
-If Successful: Schedule the call using the Scheduling Global Agent.
-If No Response After X Days: Trigger the Voice Call Agent to initiate an outbound call.
- 
-Step 4: AI Voice Call (Agent 3)
-Goal: Use an AI Voice Call to either confirm interest or schedule a demo.
-Post-Call: Depending on the outcome, either:
-Goal Achieved: End the campaign, update CRM.
-Goal Not Achieved: Loop back to nurturing via SMS or Webchat.
-Conclusion: How Plura's Campaign Concept Works
+## In Summary
 
 Plura's AI-driven Omni-Channel Campaign Builder gives businesses the ability to craft seamless, dynamic customer journeys using Webchat, SMS, and Voice Call agents. By leveraging conditional transitions, global agents, and a centralized state management system, Plura ensures personalized, relevant, and goal-oriented communications across all touchpoints.
 
