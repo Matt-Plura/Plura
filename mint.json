@@ -98,6 +98,12 @@
       ]
     },
     {
+      "group": "essentials",
+      "pages": [
+        "essentials/code"
+      ]
+    },
+    {
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction"
