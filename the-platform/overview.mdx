@@ -102,18 +102,25 @@ Each campaign has a clearly defined goal, and Plura tracks the - user's progress
 >
 > **Conditional Logic Based on Goals:** If the user achieves the goal early (e.g., schedules a call via Webchat), the system automatically ends further outreach. If the goal isn't met, the campaign continues nurturing the lead.
 
-Example Campaign Flow (Goal: Schedule a Call):
-Webchat Agent: Engage the user on the website.
-Action: Attempt to schedule a call.
-If Successful: End the campaign, update the CRM.
-If Unsuccessful: Transition to SMS follow-up.
-SMS Agent: Re-engage the user via text.
-Action: Attempt to schedule a call through SMS.
-If Successful: End the campaign, update the CRM.
-If Unsuccessful: Initiate an AI Voice Call.
-Voice Call Agent: Initiate a call to engage the user directly.
-Action: Attempt to schedule or confirm the demo.
-Post-Call: Depending on the call's outcome, either mark the goal as achieved or continue nurturing the lead via SMS/Webchat.
+#### Step-by-Step Campaign Example<br/>
+**Objective:** Schedule a call
+
+<Steps>
+  <Step title="Step 1: User Engages Webchat">
+**Action:** Attempt to schedule a call.<br/>
+**If Successful:** End the campaign, update the CRM.<br/>
+**If Unsuccessful:** Transition to SMS follow-up.
+  </Step>
+  <Step title="Step 2: Re-engage the user via SMS">
+**Action:** Attempt to schedule a call through SMS.<br/>
+**If Successful:** End the campaign, update the CRM.<br/>
+**If Unsuccessful:** Initiate an AI Voice Call.  
+  </Step>
+  <Step title="Step 3: Initiate a call to engage the user directly">
+**Action:** Attempt to schedule or confirm the demo.
+**Post-Call:** Depending on the call's outcome, either mark the goal as achieved or continue nurturing the lead via SMS/Webchat.
+  </Step>
+</Steps>
 
 ## 6. Data-Driven Personalization
 Plura leverages user data to deliver highly personalized interactions across all channels. Using data stored in the centralized user profile, the system can tailor each message to the user, increasing engagement and relevance.
@@ -126,7 +133,7 @@ Example of Personalization:
 Webchat Greeting: "Hi `Name`, welcome back! I see you've been exploring `Product`. Would you like to schedule a demo?"
 SMS Follow-Up: "Hey `Name`, it's been a few days since we talked about `Product`. Are you still interested in scheduling a call?"
 
-#### Step-by-Step Example Campaign:<br/>
+#### Step-by-Step Campaign Example:<br/>
 **Objective:** Schedule a demo
 
 <Steps>
