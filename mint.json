@@ -71,11 +71,7 @@
         "the-platform/dashboard/analytics"
       ]
     },
-    {
-  "pages": [
     "the-platform/settings",
-  ]
-},
     {
       "group": "Ai Campaigns",
       "pages": [
