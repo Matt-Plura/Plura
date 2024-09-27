@@ -71,7 +71,12 @@
             "the-platform/dashboard/analytics"
           ]
         },
-        "the-platform/settings",
+        "the-platform/settings"
+      ]
+    },
+    {
+      "group": "Features",
+      "pages": [
         {
           "group": "Ai Campaigns",
           "pages": [
@@ -84,40 +89,27 @@
             "ai-campaigns/analysis",
             "ai-campaigns/publishing"
           ]
-        },
-        {
-          "group": "Journeys",
-          "pages": [
-            "journeys/overview",
-            "journeys/configuration",
-            "journeys/knowledge-base",
-            "journeys/voice",
-            "journeys/functions",
-            "journeys/advanced",
-            "journeys/analysis",
-            "journeys/publishing"
-          ]
-        },
-        {
-          "group": "Essentials",
-          "pages": [
-            "essentials/code"
-          ]
-        },
-        {
-          "group": "API Documentation",
-          "pages": [
-            "api-reference/introduction"
-          ]
-        },
-        {
-          "group": "Endpoint Examples",
-          "pages": [
-            "api-reference/endpoint/get",
-            "api-reference/endpoint/create",
-            "api-reference/endpoint/delete"
-          ]
         }
+      ]
+    },
+    {
+      "group": "Essentials", 
+      "pages": [
+        "essentials/code"
+      ]
+    },
+    {
+      "group": "API Documentation",
+      "pages": [
+        "api-reference/introduction"
+      ]
+    },
+    {
+      "group": "Endpoint Examples",
+      "pages": [
+        "api-reference/endpoint/get",
+        "api-reference/endpoint/create",
+        "api-reference/endpoint/delete"
       ]
     }
   ],
