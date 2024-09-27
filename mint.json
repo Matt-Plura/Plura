@@ -60,7 +60,7 @@
     {
       "group": "The Platform",
       "pages": [
-        "the-platform/the-dashboard",
+        "the-platform/dashboard",
         "the-platform/ai-campaigns",
         "the-platform/journeys",
         "the-platform/inbox",
