@@ -68,38 +68,29 @@
         {
           "group": "Ai Campaigns",
           "pages": [
-            "ai-campaigns/overview",
-            "ai-campaigns/configuration",
-            "ai-campaigns/knowledge-base",
-            "ai-campaigns/functions",
-            "ai-campaigns/voice",
-            "ai-campaigns/advanced",
-            "ai-campaigns/analysis",
-            "ai-campaigns/publishing"
+            "the-platform/ai-campaigns/overview",
+            "the-platform/ai-campaigns/configuration",
+            "the-platform/ai-campaigns/knowledge-base",
+            "the-platform/ai-campaigns/functions",
+            "the-platform/ai-campaigns/voice",
+            "the-platform/ai-campaigns/advanced",
+            "the-platform/ai-campaigns/analysis",
+            "the-platform/ai-campaigns/publishing"
           ]
         },
-        "the-platform/phone-numbers"
-        "the-platform/inbox"
-        "the-platform/history"
-        "the-platform/analytics"
-      ]
-    },
-    {
-      "group": "Features",
-      "pages": [
         {
-          "group": "Ai Campaigns",
+          "group": "Journeys",
           "pages": [
-            "ai-campaigns/overview",
-            "ai-campaigns/configuration",
-            "ai-campaigns/knowledge-base",
-            "ai-campaigns/voice",
-            "ai-campaigns/functions",
-            "ai-campaigns/advanced",
-            "ai-campaigns/analysis",
-            "ai-campaigns/publishing"
+            "the-platform/journeys/overview", 
+            "the-platform/journeys/configuration", 
+            "the-platform/journeys/knowledge-base"
           ]
-        }
+        },
+        "the-platform/analytics",
+        "the-platform/history",
+        "the-platform/inbox",
+        "the-platform/phone-numbers",
+        "the-platform/settings"
       ]
     },
     {
