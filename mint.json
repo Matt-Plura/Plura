@@ -49,8 +49,8 @@
     },
     {
       "name": "Support",
-      "icon": "newspaper",
-      "url": "support"
+      "icon": "help-circle",
+      "url": "support.mdx"
     }
   ],
   "navigation": [
