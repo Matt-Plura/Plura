@@ -66,17 +66,22 @@
       "group": "The Platform",
       "pages": [
         {
-          "group": "Dashboard",
+          "group": "Ai Campaigns",
           "pages": [
-            "the-platform/dashboard/ai-campaigns",
-            "the-platform/dashboard/journeys",
-            "the-platform/dashboard/inbox",
-            "the-platform/dashboard/phone-numbers",
-            "the-platform/dashboard/history",
-            "the-platform/dashboard/analytics"
+            "ai-campaigns/overview",
+            "ai-campaigns/configuration",
+            "ai-campaigns/knowledge-base",
+            "ai-campaigns/functions",
+            "ai-campaigns/voice",
+            "ai-campaigns/advanced",
+            "ai-campaigns/analysis",
+            "ai-campaigns/publishing"
           ]
         },
-        "the-platform/settings"
+        "the-platform/phone-numbers"
+        "the-platform/inbox"
+        "the-platform/history"
+        "the-platform/analytics"
       ]
     },
     {
