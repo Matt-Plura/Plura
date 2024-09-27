@@ -75,10 +75,6 @@
   "group": "Settings",
   "pages": [
     "the-platform/settings/settings",
-    {
-      "name": "API Reference",
-      "url": "/api-reference"
-    },
     "the-platform/settings/help-and-support"
   ]
 },
