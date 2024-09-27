@@ -60,7 +60,6 @@
     {
       "group": "The Platform",
       "pages": [
-        "the-platform/dashboard",
         "the-platform/dashboard/ai-campaigns",
         "the-platform/dashboard/analytics",
         "the-platform/journeys",
