@@ -50,10 +50,10 @@
   ],
   "navigation": [
     {
-      "group": "General",
+      "group": "Get Started",
       "pages": [
-        "introduction",
-        "quickstart",
+        "overview",
+        "intro-to-plura",
         "compliance",
         "support"
       ]
