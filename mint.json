@@ -88,7 +88,12 @@
         "the-platform/phone-numbers",
         "the-platform/history",
         "the-platform/analytics",
-        "the-platform/settings"
+        {
+          "group": "Settings",
+          "pages": [
+            "the-platform/settings/billing"
+          ]
+        }
       ]
     },
     {
