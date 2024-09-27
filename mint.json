@@ -58,17 +58,28 @@
       ]
     },
     {
-      "group": "The Platform",
+  "group": "The Platform",
+  "pages": [
+    {
+      "group": "Dashboard",
       "pages": [
-            "the-platform/dashboard/ai-campaigns",
-            "the-platform/dashboard/analytics",
-            "the-platform/dashboard/journeys",
-            "the-platform/dashboard/inbox",
-            "the-platform/dashboard/phone-numbers",
-            "the-platform/settings/history",
-            "the-platform/settings/settings"
+        "the-platform/dashboard/ai-campaigns",
+        "the-platform/dashboard/analytics",
+        "the-platform/dashboard/journeys",
+        "the-platform/dashboard/inbox",
+        "the-platform/dashboard/phone-numbers"
       ]
     },
+    {
+      "group": "Settings",
+      "pages": [
+        "the-platform/settings/history",
+        "the-platform/settings/settings"
+      ]
+    }
+  ]
+}
+,
     {
       "group": "Ai Campaigns",
       "pages": [
