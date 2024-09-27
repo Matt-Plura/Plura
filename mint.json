@@ -61,12 +61,12 @@
       "group": "The Platform",
       "pages": [
         "the-platform/dashboard",
-        "the-platform/ai-campaigns",
+        "the-platform/dashboard/ai-campaigns",
+        "the-platform/dashboard/analytics",
         "the-platform/journeys",
         "the-platform/inbox",
         "the-platform/phone-numbers",
         "the-platform/history",
-        "the-platform/analytics",
         "the-platform/settings"
       ]
     },
