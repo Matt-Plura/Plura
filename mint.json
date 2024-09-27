@@ -81,15 +81,13 @@
         {
           "group": "Journeys",
           "pages": [
-            "the-platform/journeys/overview", 
-            "the-platform/journeys/configuration", 
-            "the-platform/journeys/knowledge-base"
+            "the-platform/journeys/overview"
           ]
         },
-        "the-platform/analytics",
-        "the-platform/history",
         "the-platform/inbox",
         "the-platform/phone-numbers",
+        "the-platform/history",
+        "the-platform/analytics",
         "the-platform/settings"
       ]
     },
