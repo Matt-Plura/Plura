@@ -64,10 +64,11 @@
       "group": "Dashboard",
       "pages": [
         "the-platform/dashboard/ai-campaigns",
-        "the-platform/dashboard/analytics",
         "the-platform/dashboard/journeys",
         "the-platform/dashboard/inbox",
-        "the-platform/dashboard/phone-numbers"
+        "the-platform/dashboard/phone-numbers",
+        "the-platform/dashboard/history",
+        "the-platform/dashboard/analytics"
       ]
     },
     {
@@ -76,10 +77,10 @@
     "the-platform/settings/settings",
     "the-platform/settings/documentation",
     {
-      "name": "API Documentation",
+      "name": "Documentation",
       "url": "/api-reference"
     },
-    "the-platform/settings/support"
+    "the-platform/settings/help-and-support"
     ]
     },
     {
