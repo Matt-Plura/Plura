@@ -49,7 +49,7 @@
     },
     {
       "name": "Support",
-      "icon": "help-circle",
+      "icon": "question-circle",
       "url": "support.mdx"
     }
   ],
