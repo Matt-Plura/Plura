@@ -72,10 +72,8 @@
       ]
     },
     {
-  "group": "Settings",
   "pages": [
-    "the-platform/settings/settings",
-    "the-platform/settings/help-and-support"
+    "the-platform/settings",
   ]
 },
     {
