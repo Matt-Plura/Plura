@@ -68,8 +68,9 @@
         "the-platform/dashboard/inbox",
         "the-platform/dashboard/phone-numbers",
         "the-platform/dashboard/history",
-        "the-platform/dashboard/analytics"
+        "the-platform/dashboard/analytics",
       ]
+      "the-platform/settings"
     },
     {
       "group": "Ai Campaigns",
