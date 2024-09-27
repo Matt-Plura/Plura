@@ -77,12 +77,11 @@
     "the-platform/settings/documentation",
     {
       "name": "API Documentation",
-      "url": "/api-reference",
-      "external": false
+      "url": "/api-reference"
     },
     "the-platform/settings/support"
-  ]
-},
+    ]
+    },
     {
       "group": "Ai Campaigns",
       "pages": [
