@@ -58,63 +58,65 @@
       ]
     },
     {
-    "group": "The Platform",
-    "pages": [
-    {
-      "group": "Dashboard",
+      "group": "The Platform",
       "pages": [
-        "the-platform/dashboard/ai-campaigns",
-        "the-platform/dashboard/journeys",
-        "the-platform/dashboard/inbox",
-        "the-platform/dashboard/phone-numbers",
-        "the-platform/dashboard/history",
-        "the-platform/dashboard/analytics"
-      ]
-    },
-    {
-      "group": "Ai Campaigns",
-      "pages": [
-        "ai-campaigns/overview",
-        "ai-campaigns/configuration",
-        "ai-campaigns/knowledge-base",
-        "ai-campaigns/voice",
-        "ai-campaigns/functions",
-        "ai-campaigns/advanced",
-        "ai-campaigns/analysis",
-        "ai-campaigns/publishing"
-      ]
-    },
-    {
-      "group": "Journeys",
-      "pages": [
-        "journeys/overview",
-        "journeys/configuration",
-        "journeys/knowledge-base",
-        "journeys/voice",
-        "journeys/functions",
-        "journeys/advanced",
-        "journeys/analysis",
-        "journeys/publishing"
-      ]
-    },
-    {
-      "group": "Essentials",
-      "pages": [
-        "essentials/code"
-      ]
-    },
-    {
-      "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        {
+          "group": "Dashboard",
+          "pages": [
+            "the-platform/dashboard/ai-campaigns",
+            "the-platform/dashboard/journeys",
+            "the-platform/dashboard/inbox",
+            "the-platform/dashboard/phone-numbers",
+            "the-platform/dashboard/history",
+            "the-platform/dashboard/analytics"
+          ]
+        },
+        {
+          "group": "Ai Campaigns",
+          "pages": [
+            "ai-campaigns/overview",
+            "ai-campaigns/configuration",
+            "ai-campaigns/knowledge-base",
+            "ai-campaigns/voice",
+            "ai-campaigns/functions",
+            "ai-campaigns/advanced",
+            "ai-campaigns/analysis",
+            "ai-campaigns/publishing"
+          ]
+        },
+        {
+          "group": "Journeys",
+          "pages": [
+            "journeys/overview",
+            "journeys/configuration",
+            "journeys/knowledge-base",
+            "journeys/voice",
+            "journeys/functions",
+            "journeys/advanced",
+            "journeys/analysis",
+            "journeys/publishing"
+          ]
+        },
+        {
+          "group": "Essentials",
+          "pages": [
+            "essentials/code"
+          ]
+        },
+        {
+          "group": "API Documentation",
+          "pages": [
+            "api-reference/introduction"
+          ]
+        },
+        {
+          "group": "Endpoint Examples",
+          "pages": [
+            "api-reference/endpoint/get",
+            "api-reference/endpoint/create",
+            "api-reference/endpoint/delete"
+          ]
+        }
       ]
     }
   ],
