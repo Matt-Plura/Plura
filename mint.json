@@ -71,12 +71,16 @@
       ]
     },
     {
-      "group": "Settings",
-      "pages": [
-        "the-platform/settings/history",
-        "the-platform/settings/settings"
-      ]
-    }
+  "group": "Settings",
+  "pages": [
+    "the-platform/settings/settings",
+    "the-platform/settings/documentation",
+    {
+      "name": "API Documentation",
+      "url": "/api-reference",
+      "external": false
+    },
+    "the-platform/settings/support"
   ]
 },
     {
