@@ -1,15 +1,15 @@
 ---
 title: 'Overview'
-description: 'AI Campaigns by Plura Explained'
+description: 'AI Agents by Plura Explained'
 ---
 
-## AI Campaigns Overview
+## AI Agents Overview
 
-Plura is an omni-channel AI customer journey builder that enables businesses to design sophisticated communications across Webchat, SMS, and Voice Call channels. These advanced communciations are  designated as AI Campaigns. Each AI Campaign consists of modular agents that handle specific tasks, including customer engagement, goal setting, and scheduling, all while maintaining a unified flow of communication.
+Plura is an omni-channel AI customer journey builder that enables businesses to design sophisticated communications across Webchat, SMS, and Voice Call channels. These advanced communciations are  designated as AI Agents. Each AI Agent consists of modular agents that handle specific tasks, including customer engagement, goal setting, and scheduling, all while maintaining a unified flow of communication.
  
-The AI Campaign builder is designed to intelligently transition between channels based on user behavior, utilizing **modular agents** for each channel, **global agents** for tasks like scheduling and opt-out requests, and **conditional logic** to ensure a smooth and personalized experience throughout the customer journey.
+The AI Agent builder is designed to intelligently transition between channels based on user behavior, utilizing **modular agents** for each channel, **global agents** for tasks like scheduling and opt-out requests, and **conditional logic** to ensure a smooth and personalized experience throughout the customer journey.
  
-## Key Components of AI Campaigns
+## Key Components of AI Agents
 
 1. Modular Agents (Webchat, SMS, Voice Call)
 2. Conditions
@@ -33,7 +33,7 @@ Plura’s core concept revolves around agents—specialized, reusable building b
   </Accordion>
   <Accordion title="Voice Agent">
     **Purpose:**<br/>
-    Automates AI-driven voice calls to convert leads or handle customer service.<br/><br/>**Functionality:**<br/>Handles both inbound and outbound calls. Follows pre-defined scripts or responds dynamically based on the conversation. Aims to meet campaign goals (e.g., sales, appointment booking).<br/><br/>**When Active:**<br/>Typically used after a webchat or SMS engagement to solidify interest and close a sale.<br/><br/>
+    Automates AI-driven voice calls to convert leads or handle customer service.<br/><br/>**Functionality:**<br/>Handles both inbound and outbound calls. Follows pre-defined scripts or responds dynamically based on the conversation. Aims to meet Agent goals (e.g., sales, appointment booking).<br/><br/>**When Active:**<br/>Typically used after a webchat or SMS engagement to solidify interest and close a sale.<br/><br/>
   </Accordion>
 </AccordionGroup>
 
@@ -53,24 +53,24 @@ Because conditions are based on events. Plura uses these events (e.g., user clos
 
 <AccordionGroup>
   <Accordion title="Agent 1: Webchat">
-    **Condition:** (e.g., user hasn't responded in 48 hours, user expresses interest) dictate when and where transitions occur in the campaign. Go to (Agent 2).
+    **Condition:** (e.g., user hasn't responded in 48 hours, user expresses interest) dictate when and where transitions occur in the Agent. Go to (Agent 2).
   </Accordion>
   <Accordion title="Agent 2: SMS">
     **Send follow-up SMS** to keep the user engaged.
  `condition` If the user doesn't respond after 2 days, initiate an AI Voice Call (Agent 3).
   </Accordion>
   <Accordion title="Agent 3: Voice Call">
-    **Attempt to re-engage** through a scheduled or proactive AI call. <br/>Initiate `post-call action` based on the outcome to either end the campaign if the goal is met, return to SMS, Webchat or both.
+    **Attempt to re-engage** through a scheduled or proactive AI call. <br/>Initiate `post-call action` based on the outcome to either end the Agent if the goal is met, return to SMS, Webchat or both.
   </Accordion>
 </AccordionGroup>
 
 ## 3. Global Agents
-Plura's global agents handle common tasks that can be triggered at any point in the campaign. These agents ensure consistency and reduce redundancy by handling tasks centrally, such as scheduling calls or managing opt-out requests.
+Plura's global agents handle common tasks that can be triggered at any point in the Agent. These agents ensure consistency and reduce redundancy by handling tasks centrally, such as scheduling calls or managing opt-out requests.
 
 <AccordionGroup>
   <Accordion title="Scheduling Global Agent">
     **Purpose:**<br/>Handles scheduling requests across all agents and channels.<br/><br/>
-**Functionality:** Presents available times for calls or appointments, confirms bookings, and updates the campaign's state.
+**Functionality:** Presents available times for calls or appointments, confirms bookings, and updates the Agent's state.
 <br/><br/>**When Triggered:**<br/>If a user requests a call in Webchat, SMS, or Voice, this global agent takes over to finalize the appointment.<br/><br/>
   </Accordion>
   <Accordion title="DNC (Do Not Contact) Global Agent">
@@ -87,7 +87,7 @@ Plura's global agents handle common tasks that can be triggered at any point in 
  To ensure seamless transitions between agents, Plura's centralized state management system tracks all user interactions and maintains their context, so agents can reference past engagements and pick up where the previous interaction left off.
 
 #### How It Works:
-- **Centralized User Profile:** Stores interaction history, current state (e.g., last active channel), and campaign progress (e.g., call scheduled, goal achieved).
+- **Centralized User Profile:** Stores interaction history, current state (e.g., last active channel), and Agent progress (e.g., call scheduled, goal achieved).
 - **Real-Time Updates:** When a user interacts with Webchat, SMS, or Voice, the system updates the centralized profile so all agents remain in sync.
 
 <Tip>
@@ -95,35 +95,35 @@ Plura's global agents handle common tasks that can be triggered at any point in 
 **Example:** If a user was engaged via Webchat but didn't complete an action and switched to SMS later, the system knows where the user left off and picks up the conversation accordingly.
 
 </Tip>
-## 5. Goal-Driven Campaigns
-AI campaigns are designed around specific goals, such as:
+## 5. Goal-Driven Agents
+AI Agents are designed around specific goals, such as:
 - Making a Sale
 - Scheduling a Demo
 - Collecting User Information
 
 <Tip>
 
-Each campaign has a clearly defined goal. Progress towards achieving that goal is monitored at every step.
+Each Agent has a clearly defined goal. Progress towards achieving that goal is monitored at every step.
 
 </Tip>
 
 #### Goal Monitoring:
 **Automated Progression:** The system moves the user through different agents and channels, continuously checking if the goal has been achieved (e.g., call scheduled, purchase made).
 
-**Conditional Logic Based on Goals:** If the user achieves the goal early (e.g., schedules a call via Webchat), the system automatically ends further outreach. If the goal isn't met, the campaign continues nurturing the lead.
+**Conditional Logic Based on Goals:** If the user achieves the goal early (e.g., schedules a call via Webchat), the system automatically ends further outreach. If the goal isn't met, the Agent continues nurturing the lead.
 
-#### Step-by-Step Campaign Example<br/>
+#### Step-by-Step Agent Example<br/>
 **Objective:** Schedule a call
 
 <Steps>
   <Step title="Step 1: User Engages Webchat">
 **Action:** Attempt to schedule a call.<br/>
-**If Successful:** End the campaign, update the CRM.<br/>
+**If Successful:** End the Agent, update the CRM.<br/>
 **If Unsuccessful:** Transition to SMS follow-up.
   </Step>
   <Step title="Step 2: Re-engage the user via SMS">
 **Action:** Attempt to schedule a call through SMS.<br/>
-**If Successful:** End the campaign, update the CRM.<br/>
+**If Successful:** End the Agent, update the CRM.<br/>
 **If Unsuccessful:** Initiate an AI Voice Call.  
   </Step>
   <Step title="Step 3: Initiate a call to engage the user directly">
@@ -139,7 +139,7 @@ Plura leverages user data to deliver highly personalized interactions across all
 Insert dynamic variables of personalized information like `First Name`, `Product/Service`, and `Last Purchase` into messages.
 
 **Data-Driven Decision-Making:**<br/>
-Leverage user history and behavior (e.g., past interactions, engagement level) to determine the next steps in the campaign flow.
+Leverage user history and behavior (e.g., past interactions, engagement level) to determine the next steps in the Agent flow.
 <Tip>
 
 **Personalization Example:**<br/><br/>***Webchat Greeting:*** "Hi `Name`, welcome back! I see you've been exploring our `Product/Service`. Would you like to schedule a demo?"<br/><br/>
@@ -147,7 +147,7 @@ Leverage user history and behavior (e.g., past interactions, engagement level) t
 
 </Tip>
 
-#### Step-by-Step Campaign Example:<br/>
+#### Step-by-Step Agent Example:<br/>
 **Objective:** Schedule a demo
 
 <Steps>
@@ -169,7 +169,7 @@ Leverage user history and behavior (e.g., past interactions, engagement level) t
   <Step title="Step 4: AI Voice Call (Agent 3)">
     **Goal:** Use an AI Voice Call to either confirm interest or schedule a demo.<br/>
     **Post-Call:** Depending on the outcome, either:<br/>
-    **Goal Achieved:** End the campaign, update CRM.<br/>
+    **Goal Achieved:** End the Agent, update CRM.<br/>
     **Goal Not Achieved:** Loop back to nurturing via SMS or Webchat.
   </Step>
 </Steps>
@@ -177,6 +177,6 @@ Leverage user history and behavior (e.g., past interactions, engagement level) t
 
 ## In Summary
 
-Plura's AI-driven Omni-Channel Campaign Builder gives businesses the ability to craft seamless, dynamic customer journeys using Webchat, SMS, and Voice Call agents. By leveraging conditional transitions, global agents, and a centralized state management system, Plura ensures personalized, relevant, and goal-oriented communications across all touchpoints.
+Plura's AI-driven Omni-Channel Agent Builder gives businesses the ability to craft seamless, dynamic customer journeys using Webchat, SMS, and Voice Call agents. By leveraging conditional transitions, global agents, and a centralized state management system, Plura ensures personalized, relevant, and goal-oriented communications across all touchpoints.
 
-This system simplifies the complexity of multi-channel engagement, enhances user experience, and drives better campaign outcomes, such as increased sales or successful appointment bookings.
+This system simplifies the complexity of multi-channel engagement, enhances user experience, and drives better Agent outcomes, such as increased sales or successful appointment bookings.
