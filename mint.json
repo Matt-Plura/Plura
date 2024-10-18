@@ -92,7 +92,7 @@
         },
         "the-platform/phone-numbers",
         "the-platform/conversations",
-        "the-platform/contacts",
+        "the-platform/contacts", 
         {
           "group": "Logs",
           "pages": [
@@ -105,8 +105,6 @@
     {
       "group": "Essentials", 
       "pages": [
-        "essentials/billing"
-        "essentials/help-center"
         "essentials/code"
       ]
     },
