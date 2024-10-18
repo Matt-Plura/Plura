@@ -105,7 +105,6 @@
     {
       "group": "Essentials", 
       "pages": [
-        "essentials/code",
         "essentials/billing",
         "essentials/help-center"
       ]
