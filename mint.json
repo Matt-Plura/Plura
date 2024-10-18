@@ -28,19 +28,19 @@
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference"
+      "url": "https://plura.ai/api-reference"
     }
   ],
   "anchors": [
     {
       "name": "Documentation",
       "icon": "book-open-cover",
-      "url": "https://plura.com/docs"
+      "url": "https://plura.ai/docs"
     },
     {
       "name": "Community",
       "icon": "discord",
-      "url": "https://plura.com/community"
+      "url": "https://plura.ai/community"
     },
     {
       "name": "Blog",
@@ -50,7 +50,7 @@
     {
       "name": "Support",
       "icon": "life-ring",
-      "url": "support"
+      "url": "https://plura.ai/contact"
     }
   ],
   "navigation": [
@@ -105,6 +105,7 @@
     {
       "group": "Essentials", 
       "pages": [
+        "essentials/code",
         "essentials/billing",
         "essentials/help-center"
       ]
