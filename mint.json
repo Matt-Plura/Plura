@@ -7,12 +7,12 @@
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0077ed",
-    "light": "#0077ed",
-    "dark": "#0077ed",
+    "primary": "#2971FF",
+    "light": "#2971FF",
+    "dark": "#2971FF",
     "anchors": {
-      "from": "#0077ed",
-      "to": "#0077ed"
+      "from": "#2971FF",
+      "to": "#2971FF"
     }
   },
   "topbarLinks": [
@@ -50,7 +50,7 @@
     {
       "name": "Support",
       "icon": "life-ring",
-      "url": "support.mdx"
+      "url": "support"
     }
   ],
   "navigation": [
@@ -64,17 +64,18 @@
     {
       "group": "The Platform",
       "pages": [
+        "the-platform/workspaces",
         {
-          "group": "Ai Campaigns",
+          "group": "Ai Agents",
           "pages": [
-            "the-platform/ai-campaigns/overview",
-            "the-platform/ai-campaigns/configuration",
-            "the-platform/ai-campaigns/knowledge-base",
-            "the-platform/ai-campaigns/functions",
-            "the-platform/ai-campaigns/voice",
-            "the-platform/ai-campaigns/advanced",
-            "the-platform/ai-campaigns/analysis",
-            "the-platform/ai-campaigns/publishing"
+            "the-platform/ai-agents/overview",
+            "the-platform/ai-agents/configuration",
+            "the-platform/ai-agents/knowledge-base",
+            "the-platform/ai-agents/functions",
+            "the-platform/ai-agents/voice",
+            "the-platform/ai-agents/advanced",
+            "the-platform/ai-agents/analysis",
+            "the-platform/ai-agents/publishing"
           ]
         },
         {
@@ -83,21 +84,29 @@
             "the-platform/journeys/overview"
           ]
         },
-        "the-platform/inbox",
-        "the-platform/phone-numbers",
-        "the-platform/history",
-        "the-platform/analytics",
         {
-          "group": "Settings",
+          "group": "Omniflows",
           "pages": [
-            "the-platform/settings/billing"
+            "the-platform/omniflows/overview"
           ]
-        }
+        },
+        "the-platform/phone-numbers",
+        "the-platform/conversations",
+        "the-platform/contacts",
+        {
+          "group": "Logs",
+          "pages": [
+            "the-platform/logs/overview"
+          ]
+        },
+        "the-platform/analytics"
       ]
     },
     {
       "group": "Essentials", 
       "pages": [
+        "essentials/billing"
+        "essentials/help-center"
         "essentials/code"
       ]
     },
