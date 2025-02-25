@@ -1,0 +1,118 @@
+---
+title: 'Logs Overview'
+description: 'Understanding and utilizing Plura logs for monitoring and troubleshooting'
+---
+
+Plura provides comprehensive logging capabilities that help you monitor your application's behavior, track API calls, and diagnose issues. This section covers the different types of logs available and how to effectively use them for monitoring and troubleshooting.
+
+## Available Log Types
+
+<CardGroup cols={2}>
+  <Card title="Call Logs" icon="phone" href="/the-platform/logs/call-logs">
+    Track and monitor all API calls made through your Plura integration, including request details, responses, and timestamps.
+  </Card>
+  <Card title="Error Logs" icon="triangle-exclamation" href="/the-platform/logs/error-logs">
+    View and analyze system errors, exceptions, and issues that occur within your Plura implementation.
+  </Card>
+</CardGroup>
+
+## Accessing Logs
+
+You can access all logs through the Plura Console:
+
+1. Log in to your Plura Console account
+2. Navigate to the "Logs" section in the left sidebar
+3. Select the type of logs you want to view
+
+## Understanding Log Data
+
+### Call Logs
+Call logs provide detailed information about API interactions:
+
+<ResponseField name="Timestamp" type="string">
+  The exact time when the API call was made
+</ResponseField>
+
+<ResponseField name="Request ID" type="string">
+  A unique identifier for each API request
+</ResponseField>
+
+<ResponseField name="Endpoint" type="string">
+  The API endpoint that was called
+</ResponseField>
+
+<ResponseField name="Status" type="string">
+  The HTTP status code of the response
+</ResponseField>
+
+<ResponseField name="Duration" type="number">
+  Time taken to complete the request (in milliseconds)
+</ResponseField>
+
+### Error Logs
+Error logs contain critical information about system issues:
+
+<ResponseField name="Error ID" type="string">
+  Unique identifier for each error occurrence
+</ResponseField>
+
+<ResponseField name="Severity" type="string">
+  Level of error (Critical, Warning, Info)
+</ResponseField>
+
+<ResponseField name="Error Message" type="string">
+  Detailed description of what went wrong
+</ResponseField>
+
+<ResponseField name="Stack Trace" type="string">
+  Technical details about where the error occurred
+</ResponseField>
+
+## Best Practices for Log Analysis
+
+<Accordion title="Regular Monitoring" icon="chart-line">
+  Set up a routine to regularly review logs for:
+  - Unusual patterns in API calls
+  - Recurring errors
+  - Performance bottlenecks
+  - Security-related issues
+</Accordion>
+
+<Accordion title="Error Investigation" icon="magnifying-glass">
+  When investigating errors:
+  1. Start with the error timestamp
+  2. Review related call logs around the same time
+  3. Analyze the error context and stack trace
+  4. Check for similar patterns in historical logs
+</Accordion>
+
+<Accordion title="Performance Optimization" icon="gauge-high">
+  Use call logs to:
+  - Monitor API response times
+  - Identify slow-performing endpoints
+  - Track usage patterns
+  - Optimize high-traffic operations
+</Accordion>
+
+## Log Retention and Export
+
+<Info>
+  Logs are retained for 30 days by default. For longer retention periods, please contact our support team.
+</Info>
+
+You can export logs for further analysis or archival purposes:
+1. Filter the logs to the desired timeframe
+2. Click the "Export" button
+3. Choose your preferred format (CSV or JSON)
+4. Download the exported file
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Explore Call Logs" icon="arrow-right" href="/the-platform/logs/call-logs">
+    Learn more about tracking and analyzing API calls
+  </Card>
+  <Card title="Investigate Error Logs" icon="arrow-right" href="/the-platform/logs/error-logs">
+    Dive deep into error tracking and troubleshooting
+  </Card>
+</CardGroup>

@@ -96,6 +96,7 @@
         {
           "group": "Logs",
           "pages": [
+            "the-platform/logs/overview",
             "the-platform/logs/overview"
           ]
         },
@@ -103,7 +104,7 @@
       ]
     },
     {
-      "group": "Essentials", 
+      "group": "Essentials",
       "pages": [
         "essentials/billing",
         "essentials/help-center"
