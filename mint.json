@@ -58,7 +58,8 @@
       "group": "Get Started",
       "pages": [
         "intro-to-plura",
-        "compliance"
+        "compliance",
+        "development"
       ]
     },
     {
@@ -103,7 +104,7 @@
       ]
     },
     {
-      "group": "Essentials", 
+      "group": "Essentials",
       "pages": [
         "essentials/billing",
         "essentials/help-center"
