@@ -81,7 +81,9 @@
         {
           "group": "Journeys",
           "pages": [
-            "the-platform/journeys/overview"
+            "the-platform/journeys/overview",
+            "the-platform/journeys/decision-triggers",
+            "the-platform/journeys/nodes"
           ]
         },
         {
