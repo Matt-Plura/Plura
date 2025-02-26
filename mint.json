@@ -79,11 +79,11 @@
           ]
         },
         {
-          "group": "Journeys",
+          "group": "Workflows",
           "pages": [
-            "the-platform/journeys/overview",
-            "the-platform/journeys/decision-triggers",
-            "the-platform/journeys/nodes"
+            "the-platform/Workflows/overview",
+            "the-platform/Workflows/decision-triggers",
+            "the-platform/Workflows/nodes"
           ]
         },
         {
