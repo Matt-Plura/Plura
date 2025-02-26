@@ -81,7 +81,8 @@
         {
           "group": "Journeys",
           "pages": [
-            "the-platform/journeys/overview"
+            "the-platform/journeys/overview",
+            "the-platform/journeys/nodes"
           ]
         },
         {
