@@ -81,9 +81,9 @@
         {
           "group": "Workflows",
           "pages": [
-            "the-platform/Workflows/overview",
-            "the-platform/Workflows/decision-triggers",
-            "the-platform/Workflows/nodes"
+            "the-platform/workflows/overview",
+            "the-platform/workflows/decision-triggers",
+            "the-platform/workflows/nodes"
           ]
         },
         {
