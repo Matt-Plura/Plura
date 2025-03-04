@@ -79,9 +79,9 @@
           ]
         },
         {
-          "group": "Journeys",
+          "group": "Workflows",
           "pages": [
-            "the-platform/journeys/overview"
+            "the-platform/workflows/overview"
           ]
         },
         {
