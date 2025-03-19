@@ -85,7 +85,12 @@
             {
               "group": "Nodes",
               "pages": [
-                "the-platform/workflows/nodes/nodes"
+                "the-platform/workflows/nodes/overview",
+                "the-platform/workflows/nodes/ai-conversation-node",
+                "the-platform/workflows/nodes/knowledge-base-node",
+                "the-platform/workflows/nodes/end-call-node",
+                "the-platform/workflows/nodes/transfer-call-node",
+                "the-platform/workflows/nodes/api-call-node"
               ]
             }
           ]
