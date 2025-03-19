@@ -1,6 +1,6 @@
 ---
 title: "Nodes"
-description: "Description of your new file."
+description: "Building blocks of AI workflows."
 ---
 
 ## **What Are Nodes?**
@@ -17,17 +17,21 @@ Regardless of the node type, every node in Plura AI contains key sections that d
 
 The **Node Name** is a label that helps identify the node within the workflow. It should be descriptive enough to reflect the node’s function, making it easier to navigate complex workflows.
 
-![images/node-name.png](/images/node-name.png)
+## ![images/node-name.png](/images/node-name.png)
 
-## **Node Description**
+**Node Description**
 
-This optional field provides additional context about the node’s purpose. It is useful for documentation, helping designers and developers understand its role within the workflow without needing to inspect its configurations in detail.
+The **Node Description** is an optional field that provides additional context about the node’s purpose. It is useful for documentation, helping designers and developers understand its role within the workflow without needing to inspect its configurations in detail.
 
-## **Response Setup**
+## ![images/node-description.png](/images/node-description.png)
+
+**Response Setup**
 
 The **Response Setup** section defines how the AI generates and delivers responses when it reaches the node. It plays a crucial role in ensuring the AI provides accurate, relevant, and engaging interactions at each stage of the workflow.
 
-This section has two primary response modes:
+![images/response-setup.png](/images/response-setup.png)
+
+This section has two primary response modes, which can be switched using the toggle button above:
 
 > ### **AI Prompt (Dynamic Response Mode)**
 >
@@ -46,3 +50,21 @@ This section has two primary response modes:
 > - **Use Case**: Best used for structured responses such as confirmations, instructions, and standardized information (e.g., "Thank you for your inquiry. A representative will contact you shortly.").
 
 By choosing between **AI Prompt Mode** and **Static Response Mode**, you can tailor how the AI communicates within each conversation, ensuring flexibility where needed and control where required.
+
+## **Stay Condition**
+
+The **Stay Condition** prevents the AI from moving forward until a specific requirement is met, ensuring critical information is collected or a necessary interaction takes place before progressing to the next step in the workflow. Inside the Stay Condition, you define what must happen before the AI can proceed, and this condition can vary depending on the node’s purpose.
+
+For example, a valid Stay Condition could be: **"Do not proceed until the user has provided their date of birth."** This means the AI will remain in the current node and continue prompting the user until a valid date of birth is received. If the response is unclear or missing, the AI will ask again instead of advancing in the workflow.
+
+![images/stay-condition.png](/images/stay-condition.png)
+
+Stay Conditions help maintain structured and complete conversations, ensuring that the AI does not skip important steps.
+
+## Global Node Settings
+
+## Data Extraction
+
+## Voice Settings
+
+## Behavior Refinement

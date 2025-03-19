@@ -82,7 +82,12 @@
           "group": "Workflows",
           "pages": [
             "the-platform/workflows/overview",
-            "the-platform/workflows/nodes"
+            {
+              "group": "Nodes",
+              "pages": [
+                "the-platform/workflows/nodes/nodes"
+              ]
+            }
           ]
         },
         {
