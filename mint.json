@@ -94,7 +94,7 @@
               ]
             },
             "the-platform/workflows/decision-triggers",
-            "the-platform/workflows/global-prompts",
+            "the-platform/workflows/universal-prompts",
             "the-platform/workflows/building-flows"
           ]
         },
