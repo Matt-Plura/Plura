@@ -1,6 +1,6 @@
 ---
-title: "Workflows"
-description: "A brief overview of the Workflow builder"
+title: "Overview"
+description: "Workflows in Plura AI"
 ---
 
 ## What Are Workflows?
@@ -8,6 +8,19 @@ description: "A brief overview of the Workflow builder"
 A **Workflow** in Plura AI is a structured conversational system designed to create a natural conversation while ensuring the AI stays on track. It achieves this by breaking interactions into goal-oriented components, each represented by a **node** with a distinct purpose.
 
 Nodes are linked through **decision triggers**, which control the conversation flow based on predefined conditions. This structured approach helps the AI maintain consistency, ensuring a logical sequence while preserving a natural and fluid dialogue experience.
+
+## Navigating the Workflow
+
+Understanding the workflow interface is essential for building and managing AI-driven conversations effectively. Below is an overview of key navigation components:
+
+- **Nodes Section:** You can browse the available node types and create them either by clicking on the node you want to add or by dragging and dropping it into the workflow.
+- **Global Prompt:** A prompt that is always available to the AI, regardless of which node it is on. It helps guide the call and sets the overall tone of the conversation.
+- **Version History:** View and select different versions of your workflow to track changes and roll back if necessary.
+- **Create New Version:** Allows you to create a new version of the workflow, maintaining previous iterations.
+- **Analytics:** Provides insights into the performance of each node, helping you optimize conversation flow.
+- **Test Button:** Opens the test bench, enabling you to chat or call the workflow and observe its real-time behavior.
+- **Save & Publish:** The save button saves the workflow changes, while the publish button deploys the flow into either development or production.
+- **Navigation Bar:** Contains essential tools for managing your workspace, including undo and redo buttons for easy revisions.
 
 ## Components of a Workflow
 
@@ -23,12 +36,30 @@ Nodes are the building blocks of a Workflow. Each node serves a unique purpose a
 - **Transfer Call Node**: Redirects the conversation to a human agent or another department.
 - **API Call Node**: Allows integration with external systems by making API requests to fetch or send data.
 
-### 2. **Decision Triggers**
+Each node contains three main buttons:
+
+- **Delete Button:** Removes the node from the workflow.
+- **Edit Button:** Opens the node settings where you can configure its behavior.
+- **Node Wizard:** A feature that simplifies node creation by automatically generating prompts, conditions, and other necessary configurations based on minimal instructions.
+
+### 2. **Global Prompt**
+
+The **Global Prompt** is a predefined prompt that remains active throughout the entire workflow, regardless of which node the AI is currently on. It plays a crucial role in guiding the call, maintaining context, and ensuring a consistent tone throughout the interaction.
+
+### 3. **Decision Triggers**
 
 Decision triggers define the connections between nodes, allowing conversations to progress based on predefined conditions. Each decision trigger can have:
 
 - **Conditional Logic**: Determines which path the AI should take based on user inputs, API responses, or internal variables.
 - **Multiple Branching Options**: Enables different conversation flows depending on various criteria.
+
+### 4. **Conditions**
+
+Conditions control how and when a decision trigger is activated. These conditions can be based on:
+
+- User responses (e.g., "Yes" or "No")
+- Data retrieved from APIs
+- Internal system variables (e.g., time of day, user status)
 
 ## Why Use Workflows?
 

@@ -95,12 +95,6 @@
             }
           ]
         },
-        {
-          "group": "Omniflows",
-          "pages": [
-            "the-platform/omniflows/overview"
-          ]
-        },
         "the-platform/phone-numbers",
         "the-platform/conversations",
         "the-platform/contacts",
