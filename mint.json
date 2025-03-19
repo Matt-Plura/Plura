@@ -92,7 +92,10 @@
                 "the-platform/workflows/nodes/transfer-call-node",
                 "the-platform/workflows/nodes/api-call-node"
               ]
-            }
+            },
+            "the-platform/workflows/decision-triggers",
+            "the-platform/workflows/global-prompts",
+            "the-platform/workflows/building-flows"
           ]
         },
         "the-platform/phone-numbers",
