@@ -19,6 +19,12 @@ Nodes are connected through **Decision Triggers**, which dictate the conversatio
   src="/images/decision-triggers.png"
 />
 
+### **Building Nodes**
+
+Nodes can be created and configured either **manually** or using the **Node Wizard**. The **Node Wizard** simplifies node creation by automatically generating prompts, conditions, and other necessary configurations based on minimal input. More details on using the **Node Wizard** can be found in the **Building Flows** section.
+
+When configuring nodes manually, multiple sections contribute to a node’s functionality. While each node type has unique settings, they share many core components that define their behavior and interaction within the workflow.
+
 ### **Common Sections Found in Every Node**
 
 Regardless of the node type, every node in Plura AI contains key sections that define its behavior and interaction logic. These sections ensure consistency across workflows and allow for granular control over how the AI operates.
@@ -26,18 +32,29 @@ Regardless of the node type, every node in Plura AI contains key sections that d
 ## **Node Name**
 
 The **Node Name** is a label that helps identify the node within the workflow. It should be descriptive enough to reflect the node’s function, making it easier to navigate complex workflows.
-![images/node-name.png](/images/node-name.png)
+
+<img
+  width="600"
+  src="/images/node-name.png"
+/>
 
 ## **Node Description**
 
 The **Node Description** is an optional field that provides additional context about the node’s purpose. It is useful for documentation, helping designers and developers understand its role within the workflow without needing to inspect its configurations in detail.
-![images/node-description.png](/images/node-description.png)
+
+<img
+  width="600"
+  src="/images/node-description.png"
+/>
 
 ## **Response Setup**
 
 The **Response Setup** section defines how the AI generates and delivers responses when it reaches the node. It plays a crucial role in ensuring the AI provides accurate, relevant, and engaging interactions at each stage of the workflow.
 
-![images/response-setup.png](/images/response-setup.png)
+<img
+  width="600"
+  src="/images/response-setup.png"
+/>
 
 This section has two primary response modes, which can be switched using the toggle button above:
 
@@ -65,14 +82,92 @@ The **Stay Condition** prevents the AI from moving forward until a specific requ
 
 For example, a valid Stay Condition could be: **"Do not proceed until the user has provided their date of birth."** This means the AI will remain in the current node and continue prompting the user until a valid date of birth is received. If the response is unclear or missing, the AI will ask again instead of advancing in the workflow.
 
-![images/stay-condition.png](/images/stay-condition.png)
+<img
+  width="600"
+  src="/images/stay-condition.png"
+/>
 
 Stay Conditions help maintain structured and complete conversations, ensuring that the AI does not skip important steps.
 
 ## **Global Node Settings**
 
+When a node has the **Global Node** feature enabled, it becomes accessible from any point in the conversation flow. This means that **Global Nodes** can be triggered at any time, regardless of the current state of the workflow.
+
+<img
+  width="600"
+  src="/images/global-node.png"
+/>
+
+Much like **Decision Triggers**, **Global Nodes** have their own **Global Decision Triggers** that function similarly, with the key difference being that they can be activated from anywhere in the flow. These triggers determine when the Global Node should be executed.
+
+Since any type of node can be converted into a **Global Node**, they offer a wide range of use cases. Some **Global Nodes** perform tasks and then return the conversation back to its original flow after execution, ensuring seamless integration into the overall workflow.
+
 ## **Data Extraction**
+
+The **Data Extraction** section captures and stores data from the conversation while the AI is on that node. It ensures that key user inputs are collected, formatted, and stored for later use within the workflow or external integrations.
+
+<img
+  width="600"
+  src="/images/data-extraction.png"
+/>
+
+When **Data Extraction** is enabled, you can specify:
+
+- **Variable Name:** A unique identifier for the extracted data (e.g., `customer_name`).
+- **Type:** The format of the data, such as text, numbers, or other structured data.
+- **Description:** An optional field to define what information is being collected.
+- **Format:** A custom format specification if required (e.g., date format, number validation).
+- **Required Field:** If enabled, the conversation cannot proceed until this data is provided.
+
+### **Common Use Cases:**
+
+- Capturing a user's **name, email, or phone number** for future reference.
+- Extracting **order details or reservation information** for processing.
+- Validating **user-provided data** before executing further actions.
+
+_Data extraction ensures the AI captures and processes critical information efficiently, improving workflow automation and data integrity._
 
 ## **Voice Settings**
 
+The **Voice Settings** section provides customization over how the node handles conversational situations and AI voice interactions. It allows fine-tuning of response behavior, interruption management, and AI model preferences.
+
+<img
+  width="600"
+  src="/images/voice-settings.png"
+/>
+
+- **AI Model** – Selects the AI model for voice interactions.
+- **Temperature** – Controls response variability (lower values make responses more predictable, higher values add creativity).
+- **Dynamic Interruption Threshold** – Adjusts how interruptions are handled from this node onwards.
+
+#### **Voice Interaction Settings:**
+
+- **Wait for User’s Response** – Pauses until the user speaks.
+- **Skip User’s Response** – Proceeds without waiting for input.
+- **Block Interruptions** – Ignores user interruptions at this node.
+- **Disable Repeating on Silence** – Prevents the node from repeating if the user remains silent.
+
+These options offer greater flexibility in controlling the AI’s responsiveness and adapting conversations to different scenarios.
+
 ## **Behavior Refinement**
+
+The **Behavior Refinement** section allows manual fine-tuning of how the AI handles \*\*responses, conditions, and decision triggers \*\*within the current node. This ensures the AI reacts appropriately in different conversational scenarios.
+
+<img
+  width="600"
+  src="/images/behaviour-refinement.png"
+/>
+
+- **Responses** – Define or adjust AI replies based on conversation history.
+- **Conditions** – Control when a condition is considered fulfilled based on user input.
+- \*\*Decision Triggers \*\*– Modify which decision trigger is activated depending on user responses.
+
+This section is **automatically populated when using the Test Bench**, allowing real-time adjustments based on AI behavior. However, it can also be **manually edited** to refine how the AI responds and processes conditions. More details on using this feature effectively can be found in the **Building Flows** section.
+
+### **Next Steps**
+
+This section covered the core structure and functionality of nodes in **Plura AI**. The following pages provide detailed documentation on each **node type**, outlining their unique configurations, available settings, and best practices for implementation.
+
+Each node type includes **specific sections** that define its behavior, offering flexibility in workflow design. Refer to the respective pages for a breakdown of how to configure and utilize these nodes effectively.
+
+For more advanced usage, see the **Building Flows** section to understand how nodes interact within a workflow and how to refine AI behavior through testing and iteration.
