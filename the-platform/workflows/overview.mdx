@@ -24,9 +24,9 @@ Understanding the workflow interface is essential for building and managing AI-d
 - **Universal Prompt:** A prompt that is always available to the AI, regardless of which node it is on. It helps guide the call and sets the overall tone of the conversation. ![/images/universal-prompt.png\+\_existingInIndexedDbMintlify](/images/universal-prompt.png)
 - **Workflow Control Bar:** The Workflow Control Bar contains essential tools for managing different versions, monitoring performance, and testing workflows. ![images/top-bar.png](/images/top-bar.png)
   - **Version History:** View and select different versions of your workflow to track changes and roll back if necessary.
-  - **Create New Version:** Allows you to create a new version of the workflow, maintaining previous iterations.
-  - **Analytics:** Provides insights into the performance of each node, helping you optimize conversation flow.
-  - **Test Button:** Opens the test bench, enabling you to chat or call the workflow and observe its real-time behavior.
+  - **Create Version:** Allows you to create a new version of the workflow, maintaining previous iterations.
+  - **Show Analytics:** Provides insights into the performance of each node, helping you optimize conversation flow.
+  - **Test:** Opens the test bench, enabling you to chat or call the workflow and observe its real-time behavior.
   - **Save & Publish:** The save button saves the workflow changes, while the publish button deploys the flow into either development or production.
 - **Navigation Bar:** Contains essential tools for managing your workspace, including undo and redo buttons for easy revisions. ![images/navigation-bar.png](/images/navigation-bar.png)
 - **Node Management:** Each node contains three main buttons to help manage and configure its functionality.
@@ -51,11 +51,11 @@ A Workflow consists of the following key elements:
 
     Some of the primary node types include:
 
-    - **AI Conversation Node**: The core node where you provide specific instructions to the AI for handling a segment of the conversation.
-    - **Knowledge Base Node**: Enables the AI to retrieve relevant information from a predefined knowledge source.
-    - **End Call Node**: Terminates the conversation when a specific outcome is reached.
-    - **Transfer Call Node**: Redirects the conversation to a human agent or another department.
-    - **API Call Node**: Allows integration with external systems by making API requests to fetch or send data.
+    - <Icon icon="message" color="#60a5fa" />  **AI Conversation Node**: The core node where you provide specific instructions to the AI for handling a segment of the conversation.
+    - <Icon icon="book-blank" color="#c084fc" />  **Knowledge Base Node**: Enables the AI to retrieve relevant information from a predefined knowledge source.
+    - <Icon icon="phone-slash" color="#f87171" />  **End Call Node**: Terminates the conversation when a specific outcome is reached.
+    - <Icon icon="phone-volume" color="#4ade80" />  **Transfer Call Node**: Redirects the conversation to a human agent or another department.
+    - <Icon icon="arrow-up-right-from-square" color="#22d3ee" />  **API Call Node**: Allows integration with external systems by making API requests to fetch or send data.
   </Step>
   <Step title="Decision Triggers">
     Decision Triggers connect nodes and dictate the flow of a conversation. Each trigger has conditions that must be satisfied before progressing to the next node. The AI cannot move forward unless the specific condition set within the trigger is met.
