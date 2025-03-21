@@ -2,3 +2,83 @@
 title: "Decision Triggers"
 description: "Control how conversations progress based on predefined conditions."
 ---
+
+## Overview
+
+**Decision Triggers** determine how nodes are connected and define when the workflow progresses from one node to another. They ensure a structured and logical conversation flow by controlling movement based on specific conditions and user interactions.
+
+<img
+  width="500"
+  src="/images/decision-trigger.png"
+  alt="Decision Trigger"
+/>
+
+## Creating a Decision Trigger
+
+To create a **Decision Trigger**, follow these steps:
+
+1. **Hover over a node** – A **connector circle** will appear at the bottom.
+2. **Drag the connector** – Connect it to the **top circle** of another node.
+3. **Configure the trigger** – Define the conditions under which the transition occurs.
+
+<Info>
+  Decision Triggers **always move in one direction**—from the bottom of the originating node to the top of the destination node. Multiple Decision Triggers can **exit from a single node** and **enter a single node**, allowing for flexible and dynamic workflows.
+</Info>
+
+## Decision Trigger Configuration
+
+Once a Decision Trigger is created, it must be configured. There are **two key sections**:
+
+<Steps>
+  <Step title="Define Decision Trigger">
+    This section establishes the **trigger condition** that signals when the system should transition to the next node.
+
+    <img width="600" src="/images/define-decision-trigger.png" alt="Define Decision Trigger"/>
+
+    - Keep triggers **short, clear, and actionable**.
+    - Triggers should describe a **specific action, event, or condition** that moves the conversation forward.
+
+    #### Examples of Decision Triggers:
+
+    - **User responded** → The user has provided any input.
+    - **User confirmed selection** → The user explicitly agreed or chose an option.
+    - **User is eligible (Age 65+)** → The user meets a specific eligibility requirement.
+    - **User requested assistance** → The user asked for help or guidance.
+    - **User abandoned process** → The user did not respond within a set timeframe.
+  </Step>
+  <Step title="Define Decision Trigger Conditions">
+    A **Decision Trigger Condition** determines the logic behind the trigger, specifying when and why the transition should occur.
+
+    <img width="600" src="/images/define-decision-trigger-conditions.png" alt="Define Decision Trigger Conditions"/>
+
+    - Ensures that the **system correctly interprets user actions**.
+    - Prevents unintended transitions by adding **clear, logical conditions**.
+
+    #### Examples of Decision Trigger Conditions:
+
+    - **User asks for human support** → Choose this path if the user expresses the need for assistance:
+      - _"I need to talk to a real person."_
+      - _"Can I speak with a human?"_
+    - **User selects an option** → Choose this path if the user explicitly confirms:
+      - _"Yes, that's correct."_
+      - _"I'll go with option B."_
+    - **User meets a requirement** → Choose this path if a condition is met:
+      - _"User's age is 65+"_
+      - _"User has completed the previous step successfully."_
+    - **User abandoned the process** → Choose this path if:
+      - _"User did not respond within 30 seconds."_
+      - _"User exited the chat/session without confirmation."_
+
+    Well-defined Decision Trigger Conditions **ensure seamless, logical workflow progression**.
+  </Step>
+</Steps>
+
+## Global Decision Triggers
+
+**Global Nodes** have built-in **Global Decision Triggers**, which function the same way as standard Decision Triggers but are **hidden** and **can be triggered from anywhere** in the workflow.
+
+- Every node in the workflow is implicitly connected to a **Global Node**.
+- The **configuration of a Global Decision Trigger** is identical to a standard Decision Trigger.
+- Unlike regular triggers, **you won't see a visible connection**, but the functionality remains the same.
+
+Global Decision Triggers allow AI workflows to access common responses or functions **without requiring visible node connections**, ensuring efficiency and flexibility.
