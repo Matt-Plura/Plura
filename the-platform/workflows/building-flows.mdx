@@ -7,30 +7,38 @@ description: "Structuring workflows using nodes, decision triggers, and best pra
 
 Building an effective AI-powered workflow in Plura requires structuring nodes, defining logic, and continuously refining interactions. Every flow begins with a **Start Trigger**, which marks the entry point for all conversations. From there, nodes are connected using **Decision Triggers**, forming a structured conversational path. Additional components, such as **Universal Prompts** and **Global Nodes**, provide overarching guidance to maintain consistency and fluidity throughout the interaction.
 
+A well-structured workflow ensures that the AI operates seamlessly within predefined boundaries, following a logical path while maintaining a natural conversational experience. The process of building flows involves carefully arranging nodes, defining their behavior, and continuously refining interactions to align with user expectations.
+
 <img
-    width="600"
-    src="/images/decision-triggers.png"
-  />
+  width="600"
+  src="/images/decision-triggers.png"
+/>
 
 ## Structuring a Flow
 
 ### **Start Trigger**
 
+A **Start Trigger** is essential to initiate any workflow. It is the first step in defining the flow structure and must be connected to the first active node. The Start Trigger determines how and when the AI engages with users, ensuring a clear beginning to the conversation.
+
 <img
-    width="400"
-    src="/images/start-trigger.png"
-  />
+  width="400"
+  src="/images/start-trigger.png"
+/>
 
 - Every flow begins with a **Start Trigger** node, which must be connected to the first functional node.
 - The AI follows a structured path from this initial node based on **Decision Triggers** and **Stay Conditions**.
 
 ### **Connecting Nodes**
 
+To build an interactive conversation flow, nodes must be connected through **Decision Triggers**. These triggers act as logical gates, determining when and how the AI transitions from one node to another.
+
 - Nodes must be linked through **Decision Triggers**, which determine when and how the flow progresses.
 - Multiple Decision Triggers can branch out from a single node, allowing dynamic conversation handling.
 - **Stay Conditions** within nodes ensure that the AI remains within a node until necessary criteria are met before transitioning.
 
 ### **Role of Universal Prompts & Global Nodes**
+
+Both **Universal Prompts** and **Global Nodes** enhance the AI’s flexibility by ensuring consistent messaging and accessibility across all workflow stages.
 
 - **Universal Prompts** provide system-wide guidance, ensuring consistent tone, response handling, and compliance.
 - **Global Nodes** serve as universally accessible nodes that can be triggered at any point in the conversation.
@@ -39,67 +47,69 @@ Building an effective AI-powered workflow in Plura requires structuring nodes, d
 
 ### **Overview of the Test Bench**
 
-<img
-    width="300"
-    src="/images/test-bench.png"
-  />
+The **Test Bench** is a vital tool for validating workflow functionality by simulating AI interactions through **chat or voice calls**. It allows developers to analyze AI decision-making and response accuracy in real-time. Testing workflows before deployment ensures they perform as expected and handle diverse user interactions effectively.
 
-The **Test Bench** is a vital tool for validating workflow functionality by simulating AI interactions through **chat or voice calls**. It allows developers to:
+<img
+  width="300"
+  src="/images/test-bench.png"
+/>
 
 - Observe **which node is currently active**.
 - Track **decision-making processes**, including when and why the AI moved to a different node.
 - View AI reasoning for **Decision Triggers, Stay Conditions, and generated responses**.
 
 <img
-    width="600"
-    src="/images/test-bench-chat-2.png"
-  />
+  width="600"
+  src="/images/test-bench-chat-2.png"
+/>
 
 ### **Fine-Tuning AI Behavior**
 
-The **Fine-Tune** feature enables users to correct AI decision-making errors by providing feedback on:
+One of the most powerful features of the Test Bench is **Fine-Tuning**, which allows users to correct AI decision-making errors and refine behavior. If the AI makes an incorrect decision, it can be adjusted and retrained based on real interactions.
 
 - **Condition evaluation** – If the AI incorrectly determines that a condition is met or unmet.
 - **Decision Trigger selection** – If the AI chooses the wrong path based on user input.
 - **Response accuracy** – If the AI provides an inappropriate or incorrect response.
 
 <img
-    width="600"
-    src="/images/fine-tune.png"
-  />
+  width="550"
+  src="/images/fine-tune.png"
+/>
 
-Fine-Tuning adjustments are stored within the **Behavior Refinement** section of the node, ensuring ongoing improvements based on real interactions.
+Fine-Tuning adjustments are stored within the **Behavior Refinement** section of the node, ensuring ongoing improvements based on real interactions. This iterative process ensures that the AI continually learns and improves over time.
 
 ## **Accelerating Node Creation With the Node Wizard**
 
-The **Node Wizard** simplifies the node-building process by automatically generating configurations based on minimal input. It allows users to:
+The **Node Wizard** simplifies the node-building process by automatically generating configurations based on minimal input. It allows users to quickly create functional nodes without manually configuring each section.
 
 - Quickly set up **Response Prompts**, **Stay Conditions**, **Data Extraction**, and **Node Naming**.
 - Generate structured logic without manual configuration.
 - Further refine the node manually after initial setup.
 
 <img
-    width="600"
-    src="/images/node-wizard.png"
-  />
+  width="550"
+  src="/images/node-wizard.png"
+/>
 
-This tool is particularly useful for **rapid development and iteration**, helping users create functional nodes efficiently before fine-tuning details.
+This tool is particularly useful for **rapid development and iteration**, helping users create functional nodes efficiently before fine-tuning details. By leveraging the Node Wizard, developers can quickly construct complex workflows while maintaining precision and adaptability.
 
 ## **Optimizing Performance With Analytics Mode**
 
-The **Analytics Mode** provides **real-world data insights** into workflow performance, helping users refine nodes for efficiency and effectiveness. It tracks:
+The **Analytics Mode** provides **real-world data insights** into workflow performance, helping users refine nodes for efficiency and effectiveness. With **data-driven analysis**, users can adjust their workflows to enhance success rates and overall AI performance.
 
 - **User engagement per node** – The number of users who interacted with a particular node.
 - **Success rates** – The percentage of users who successfully moved through the node.
 - **Average time spent per node** – Insights into conversational bottlenecks and inefficiencies.
 
 <img
-    width="400"
-    src="/images/analytics.png"
-  />
+  width="400"
+  src="/images/analytics.png"
+/>
 
-By leveraging analytics, users can identify **problematic areas in the workflow**, such as points of high user drop-off or ineffective decision logic. This data informs prompt and condition adjustments, optimizing AI-driven interactions for better conversion rates and user experience.
+By leveraging analytics, users can identify **problematic areas in the workflow**, such as points of high user drop-off or ineffective decision logic. This data informs prompt and condition adjustments, optimizing AI-driven interactions for better conversion rates and user experience. Adjusting node prompts, refining decision triggers, and improving transition logic based on analytics ensures a seamless conversational flow that aligns with user expectations.
 
 ## **Conclusion**
 
 Building AI workflows involves structured node placement, logical transitions, and continuous iteration using **testing, fine-tuning, and analytics**. By utilizing the **Test Bench, Node Wizard, and Analytics Mode**, users can create, optimize, and refine Plura workflows for maximum efficiency and conversational effectiveness.
+
+Through rigorous testing and refinement, users can craft AI-driven workflows that are both functional and intuitive. The combination of **strategic flow structuring, iterative fine-tuning, and data-backed optimizations** ensures that AI interactions remain seamless, effective, and user-friendly.
