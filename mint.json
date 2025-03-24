@@ -82,6 +82,7 @@
           "group": "Workflows",
           "pages": [
             "the-platform/workflows/overview",
+            "the-platform/workflows/building-flows",
             {
               "group": "Nodes",
               "pages": [
@@ -94,8 +95,7 @@
               ]
             },
             "the-platform/workflows/decision-triggers",
-            "the-platform/workflows/universal-prompts",
-            "the-platform/workflows/building-flows"
+            "the-platform/workflows/universal-prompts"
           ]
         },
         "the-platform/phone-numbers",
