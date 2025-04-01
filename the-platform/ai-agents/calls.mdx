@@ -2,3 +2,50 @@
 title: "Calls"
 description: "View and manage the history of conversations handled by the agent"
 ---
+
+## overview
+
+The **Calls** tab provides a complete record of all calls handled by a specific AI Agent. This view is essential for monitoring agent activity, reviewing past interactions, and gathering insight into performance and behavior. Whether you're troubleshooting an issue or performing quality assurance, this is where you can see every call that passed through the agent.
+
+## Call History Overview
+
+The main list includes:
+
+- **Date & Time**: Timestamp for when the call took place.
+- **Direction**: Whether the call was inbound or outbound.
+- **From / To**: Phone numbers involved in the call.
+- **Interruption Flag**: Indicates whether the user interrupted the AI during the call.
+- **Duration**: Total time of the conversation in seconds.
+
+You can search for specific calls by name or filter the list to narrow your focus.
+
+## Call Detail View
+
+Clicking on a call opens a detailed view where you can inspect all available data related to that interaction:
+
+<Steps>
+  <Step title="New Step">
+    - Call Status (e.g., completed)
+    - Contact number used
+    - End call reason (e.g., hangup, timeout)
+    - Timestamp and Call ID
+  </Step>
+  <Step title="Transcript">
+    Displays a full text log of the conversation between the AI Agent and the user (if enabled). This is helpful for analyzing how well the agent followed its prompt and whether it stayed within boundaries.
+  </Step>
+  <Step title="Recording">
+    If recording is enabled, you can play back the full audio of the call. This is crucial for verifying how the AI voice sounds and whether any communication issues occurred.
+  </Step>
+  <Step title="Actions">
+    Lists any backend actions that were triggered during the call, such as webhooks or data retrieval events. You can view the payload and return value from these events
+  </Step>
+  <Step title="Analysis">
+    Displays the results from the **Analysis Tab** configuration. This may include:
+
+    - Call summary
+    - Success evaluation (based on custom logic)
+    - Structured data extractions (e.g., name, age, intent)
+  </Step>
+</Steps>
+
+The **Calls** tab is a vital resource for validating performance and continuously improving the AI agent's effectiveness. It helps developers, analysts, and QA teams understand how each interaction unfolds and what can be optimized.

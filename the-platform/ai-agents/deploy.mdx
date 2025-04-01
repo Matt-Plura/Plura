@@ -2,3 +2,32 @@
 title: "Deploy"
 description: "Configure how your agent connects with external systems and handles handoffs"
 ---
+
+## Overview
+
+The **Deploy** tab provides tools to connect your AI Agent with external systems and manage its live behavior after calls. This section focuses on how your AI agent interacts with outside services after a call ends or when calls need to be triggered programmatically.
+
+
+## Additional Settings
+
+This area allows you to define post-call behaviors and additional system interactions.
+
+- **Webhook URL**: After a call ends, a POST request is automatically sent to the provided URL. This payload contains all the relevant call data, enabling further processing, logging, or integration with other services like CRMs or automation platforms.
+- **Voicemail Message**: If a call is routed to voicemail, the agent will play this custom message. This is useful for leaving callback requests or contact follow-up instructions when the user is unavailable.
+
+
+## Deploy Phone Calls
+
+This section enables external systems to programmatically trigger calls via API.
+
+- You can use the provided `curl` command or replicate the request using your own HTTP client.
+- The payload includes:
+  - `agent`: The ID of the AI Agent.
+  - `phone`: The number the AI should dial.
+  - `from`: The number the call should appear to come from.
+  - `request_data`: Any custom data you want to pass to the agent for context.
+
+This feature is commonly used to initiate campaigns, follow-ups, or scheduled outreach based on external events.
+
+
+The Deploy tab effectively bridges the AI Agent with your broader systems, making sure post-call actions are seamless and agents can be launched dynamically when needed.

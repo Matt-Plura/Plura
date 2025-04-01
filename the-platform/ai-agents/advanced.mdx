@@ -2,3 +2,38 @@
 title: "Advanced"
 description: "Access additional settings for control over agent behavior and handling"
 ---
+
+## Overview
+
+The **Advanced** tab gives you access to configuration options that fine-tune the behavior, compliance, and responsiveness of your AI agent. These settings are useful for meeting regulatory requirements, improving performance, and controlling how the assistant manages timing and audio during a conversation.
+
+
+## Privacy Settings
+
+This section allows you to define how data is handled during interactions. These features are especially important when working in regulated industries or when you want to control recording and storage behavior.
+
+- **HIPAA Compliance**\
+  When enabled, no logs, recordings, or transcripts of calls will be stored. This ensures your assistant adheres to strict data privacy standards like HIPAA.
+- **Live Transfer Recording Transcript \+ Summary**\
+  Records and summarizes calls that are transferred live. This feature is useful for auditing and follow-up, and it incurs a small per-minute fee.
+- **AI Audio Recording**\
+  Enable this to record the entire conversation between the user and the AI. Recordings can be used for training, compliance, or quality review.
+
+
+## Pipeline Configuration
+
+This section controls the timing, pacing, and flow of the AI assistant's interaction logic. Adjusting these parameters allows you to match the assistant’s behavior to your specific use case, audience, or desired level of responsiveness.
+
+- **Silence Timeout**\
+  Defines how long the system should wait before ending a call due to user inactivity.
+- **Response Delay**\
+  Sets the minimum amount of time the assistant will wait after a user finishes speaking before it begins responding. Helps avoid cutting the caller off prematurely.
+- **LLM Request Delay**\
+  Introduces a delay between the user finishing their sentence and when a request is sent to the AI model. Useful for smoother timing in certain interactions.
+- **Interruption Threshold**\
+  Determines the timing sensitivity for when a user's interruption is detected. Lower values make the agent more interruptible, while higher values allow it to finish more of its response before pausing.
+- **Maximum Duration**\
+  Sets a hard cap on how long a call can last. Once this time limit is reached, the call ends automatically.
+
+
+These advanced controls help ensure your AI agent behaves in a predictable, context-aware, and compliant manner, giving you full control over the conversational experience.

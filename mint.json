@@ -97,7 +97,8 @@
             "the-platform/workflows/universal-prompts"
           ]
         },
-        "the-platform/phone-numbers"
+        "the-platform/phone-numbers",
+        "the-platform/analytics"
       ]
     },
     {

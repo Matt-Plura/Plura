@@ -2,3 +2,34 @@
 title: "Analysis"
 description: "Enable tools to help you understand and evaluate your agent’s performance"
 ---
+
+## Overview
+
+The **Analysis** tab allows you to define how the AI should interpret and evaluate its own performance during a call. This is where you configure post-call AI analysis, including summarization, success evaluation, and data extraction. Each section is driven by custom prompts you define, enabling deeper insights into how your AI agents are performing and what data is being collected.
+
+## Summary
+
+The Summary section allows you to configure a prompt that generates a high-level overview of the call once it's completed. This summary is stored and can be accessed later through call logs.
+
+- **Prompt Field**: Here, you define the system prompt that instructs the AI on how to summarize the call.
+- The output typically includes core objectives discussed, tone, and any other meaningful takeaways, depending on how the prompt is structured.
+
+## Success Evaluation
+
+Use this section to determine whether a call met its intended goals. This can be useful in lead qualification, appointment booking, or survey completion scenarios.
+
+- **Prompt Field**: Enter a prompt that guides the AI to review the transcript and assess whether the desired outcome was achieved.
+- This field is often used in tandem with a rubric, though it can also operate independently.
+
+## Structured Data
+
+This section focuses on extracting meaningful variables from the call that can be used for reporting, automation, or further processing.
+
+- **Prompt Field**: Similar to the other sections, the AI uses this prompt to analyze the transcript and extract key information.
+- **Data Schema**: Define the specific data points you want to capture (e.g., name, age, insurance type). Each property includes a name, data type (e.g., string, number), and description of what the variable represents.
+
+<Tip>
+  This structured data is useful for integrations, analytics, or triggering downstream workflows based on collected input.
+</Tip>
+
+By configuring the Analysis tab, you enable each AI Agent to intelligently review and process its calls, providing actionable summaries, outcome tracking, and relevant data extraction for your broader systems.
