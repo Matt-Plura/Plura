@@ -70,12 +70,11 @@
           "pages": [
             "the-platform/ai-agents/overview",
             "the-platform/ai-agents/configuration",
-            "the-platform/ai-agents/knowledge-base",
-            "the-platform/ai-agents/functions",
-            "the-platform/ai-agents/voice",
-            "the-platform/ai-agents/advanced",
+            "the-platform/ai-agents/voice-settings",
             "the-platform/ai-agents/analysis",
-            "the-platform/ai-agents/publishing"
+            "the-platform/ai-agents/advanced",
+            "the-platform/ai-agents/deploy",
+            "the-platform/ai-agents/calls"
           ]
         },
         {
@@ -99,8 +98,6 @@
           ]
         },
         "the-platform/phone-numbers",
-        "the-platform/conversations",
-        "the-platform/contacts",
         {
           "group": "Logs",
           "pages": [
