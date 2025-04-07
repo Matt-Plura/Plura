@@ -33,6 +33,11 @@
   ],
   "anchors": [
     {
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://discord.gg/PcxWWwX9jN"
+    },
+    {
       "name": "Blog",
       "icon": "newspaper",
       "url": "https://plura.ai/blog"
