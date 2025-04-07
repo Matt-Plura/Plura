@@ -33,11 +33,6 @@
   ],
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://plura.ai/docs"
-    },
-    {
       "name": "Community",
       "icon": "discord",
       "url": "https://plura.ai/community"
@@ -96,16 +91,7 @@
             "the-platform/workflows/decision-triggers",
             "the-platform/workflows/universal-prompts"
           ]
-        },
-        "the-platform/phone-numbers",
-        "the-platform/analytics"
-      ]
-    },
-    {
-      "group": "Essentials", 
-      "pages": [
-        "essentials/billing",
-        "essentials/help-center"
+        }
       ]
     }
   ],
