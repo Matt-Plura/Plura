@@ -33,19 +33,9 @@
   ],
   "anchors": [
     {
-      "name": "Community",
-      "icon": "discord",
-      "url": "https://plura.ai/community"
-    },
-    {
       "name": "Blog",
       "icon": "newspaper",
       "url": "https://plura.ai/blog"
-    },
-    {
-      "name": "Support",
-      "icon": "life-ring",
-      "url": "https://plura.ai/contact"
     }
   ],
   "navigation": [
