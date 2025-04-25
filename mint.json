@@ -25,13 +25,10 @@
     "name": "Dashboard",
     "url": "https://app.plura.ai"
   },
-  "navigation":{
-    "tabs": [
+  "tabs": [
     {
-      "tab": "API Reference",
-      "pages": [
-        "api-reference/compliance"
-      ]
+      "name": "API Reference",
+      "url": "https://plura.ai/api-reference"
     }
   ],
   "anchors": [
